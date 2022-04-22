@@ -12,9 +12,10 @@ int (*get_print_func(char c))(va_list, int)
 		{'d', print_int},
 		{'i', print_int}
 	};
-	
+
+
 	int i;
-	
+
 	for (i = 0; specifics[i].spec; i++)
 	{
 		if (c == specifics[i].spec)

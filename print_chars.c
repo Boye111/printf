@@ -8,7 +8,7 @@
 int print_ch(va_list args, int len)
 {
 	char c = va_arg(args, int);
-	
+
 	len += _putchar(c);
 	return (len);
 }
@@ -22,11 +22,11 @@ int print_ch(va_list args, int len)
 int print_str(va_list args, int len)
 {
 	const char *str = va_arg(args, const char *);
-	
+
 	if (str == NULL)
 		str = "(null)";
 	while (*str)
 		len += _putchar(*str++);
-	
+
 	return (len);
 }
