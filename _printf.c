@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _printf - prints formatted output.
- * @format: input.
- *
- *
- * Return: number of chars printed or -1.
- */
+  *_printf - prints formatted output.
+  *@format: input.
+  *
+  *Return: number of chars printed or -1.
+  */
 
 int _printf(const char *format, ...)
 {
@@ -24,7 +23,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			if (format[i} == '%')
+			if (format[i] == '%')
 			{
 				len += _putchar(format[i]);
 				i++;
@@ -40,7 +39,7 @@ int _printf(const char *format, ...)
 				len += _putchar(format[i - 1]);
 				len += _putchar(format[i]);
 			}
-			i++
+			i++;
 		}
 		else
 		{
