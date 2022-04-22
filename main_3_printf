@@ -1,0 +1,17 @@
+.\" Manpage for _printf.
+.TH _printf 3 2022-04-22 "1.0" "_printf Program Manual"
+.SH NAME
+ _printf - formatted output conversion and print data.
+.SH SYNOPSIS
+.nf
+.BI printf (FORMAT, ARGUMENT)...
+.PP
+.BI "#include 'main.h'
+.BI "#include <stdarg.h>"
+.BI "#include <stdlib.h>
+.BI "#include <unistd.h>"
+.PP
+.BI "int _printf(const char *format, ...);"
+
+.SH AUTHORS
+Written by \fBAdeboye Akingbelure\fR and \fBPaschal Erhurun\fR.
