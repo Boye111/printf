@@ -8,9 +8,9 @@
 int print_int(va_list args, int len)
 {
 	int n;
-	
+
 	n = va_arg(args, int);
-	
+
 	len = _putchar_int(n, len);
 	return (len);
 }
@@ -24,7 +24,7 @@ int print_int(va_list args, int len)
 int _putchar_int(int n, int len)
 {
 	unsigned long num;
-	
+
 	if (n < 0)
 	{
 		len += _putchar('-');
@@ -60,7 +60,7 @@ int print_numbers(unsigned long n, unsigned int base, const char *digits)
 unsigned int find_length(unsigned int n, int base)
 {
 	unsigned int count;
-	
+
 	count = 0;
 	while (n > 0)
 	{
